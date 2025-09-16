@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +19,11 @@ export function Navbar() {
           className="text-white hover:bg-white/10"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          {isMenuOpen ? (
+            <X className="h-6 w-6" />
+          ) : (
+            <Menu className="h-6 w-6" />
+          )}
         </Button>
       </div>
 
@@ -28,35 +32,35 @@ export function Navbar() {
           <div className="flex flex-col space-y-4 pt-4">
             <a
               href="#programs"
-              className="text-white hover:text-primary transition-colors text-lg"
+              className="text-white  transition-colors text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               Programs
             </a>
             <a
               href="#about"
-              className="text-white hover:text-primary transition-colors text-lg"
+              className="text-white  transition-colors text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a
               href="#admissions"
-              className="text-white hover:text-primary transition-colors text-lg"
+              className="text-white  transition-colors text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               Admissions
             </a>
             <a
               href="#contact"
-              className="text-white hover:text-primary transition-colors text-lg"
+              className="text-white transition-colors text-lg"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
             </a>
             <a
               href="#apply"
-              className="text-white hover:text-primary transition-colors text-lg font-semibold"
+              className="text-white transition-colors text-lg font-semibold"
               onClick={() => setIsMenuOpen(false)}
             >
               Apply Now
@@ -65,5 +69,5 @@ export function Navbar() {
         </div>
       )}
     </nav>
-  )
+  );
 }
