@@ -63,10 +63,7 @@ export function StoriesSection() {
                 for a rewarding career in the creative and tech industries.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button
-                  variant="secondary"
-                  className="bg-cyan-400 cursor-pointer hover:bg-cyan-500 text-black font-semibold px-6 py-2"
-                >
+                <Button className="bg-secondary cursor-pointer hover:bg-secondary/90 text-background px-6 py-2 text-md font-semibold">
                   Read article
                 </Button>
               </div>
